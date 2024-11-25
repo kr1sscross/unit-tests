@@ -5,7 +5,7 @@ class TestExportStudentsTXT(unittest.TestCase):
 
     @patch('builtins.open', new_callable=mock_open)
     def test_export_students_txt(self, mock_open):
-        from import_eksport_files.py import export_students_txt
+        from import_eksport_files import export_students_txt
         students = [{'name': 'John', 'present': True}, {'name': 'Jane', 'present': False}]
         export_students_txt(students, "output.txt")
         mock_open.assert_called_with("output.txt", mode='w')
