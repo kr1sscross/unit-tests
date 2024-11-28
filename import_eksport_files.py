@@ -1,6 +1,6 @@
 import csv
 
-# Funkcja importująca listę studentów z pliku CSV
+# Import from CSV file
 def import_students_csv(file_path):
     students = []
     try:
@@ -9,10 +9,10 @@ def import_students_csv(file_path):
             for row in reader:
                 students.append({'name': row[0], 'present': False})
     except FileNotFoundError:
-        print(f"Plik {file_path} nie został znaleziony.")
+        print(f"File {file_path} is not found.")
     return students
 
-# Funkcja eksportująca listę studentów z obecnościami do pliku CSV
+# Export student attendance list to CSV
 def export_students_csv(students, file_path):
     with open(file_path, mode='w', newline='') as file:
         writer = csv.writer(file)
@@ -20,7 +20,7 @@ def export_students_csv(students, file_path):
         for student in students:
             writer.writerow([student['name'], student['present']])
 
-# Funkcja importująca listę studentów z pliku TXT
+# Import student attendace list to TXT
 def import_students_txt(file_path):
     students = []
     try:
@@ -29,17 +29,17 @@ def import_students_txt(file_path):
                 name = line.strip()
                 students.append({'name': name, 'present': False})
     except FileNotFoundError:
-        print(f"Plik {file_path} nie został znaleziony.")
+        print(f"File {file_path} is not found.")
     return students
 
-# Funkcja eksportująca listę studentów z obecnościami do pliku TXT
+# Export student attendace list to TXT
 def export_students_txt(students, file_path):
     with open(file_path, mode='w') as file:
         for student in students:
             file.write(f"{student['name']}: {'Present' if student['present'] else 'Absent'}\n")
 
-# Funkcja do zaznaczania obecności
+# Check attendance
 def mark_attendance(students):
     for student in students:
-        present = input(f"Czy {student['name']} jest obecny/a? (y/n): ").strip().lower()
+        present = input(f"Czy {student['name']} is present? (y/n): ").strip().lower()
         student['present'] = present == 'y'

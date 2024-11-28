@@ -1,11 +1,13 @@
 import unittest
 from unittest.mock import patch, mock_open
+from import_eksport_files import import_students_csv
+
+# Dodać sprawdzenie jakie jest rozszerzenie pliku
 
 class TestImportStudentsCSV(unittest.TestCase):
 
     @patch('builtins.open', new_callable=mock_open, read_data="John,True\nJane,False\n")
     def test_import_students_csv(self, mock_open):
-        from import_eksport_files import import_students_csv
         students = import_students_csv("students.csv")
         expected = [{'name': 'John', 'present': False}, {'name': 'Jane', 'present': False}]
         self.assertEqual(students, expected)

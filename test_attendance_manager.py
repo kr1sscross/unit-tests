@@ -1,8 +1,10 @@
 import unittest
 
+# rozbić na kilka osobnych testów
+
 class TestAttendanceManager(unittest.TestCase):
     def setUp(self):
-        from mfile import AttendanceManager
+        from main import AttendanceManager
         self.manager = AttendanceManager()
 
     def test_add_attendance(self):
