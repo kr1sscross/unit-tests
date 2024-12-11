@@ -2,8 +2,6 @@ import unittest
 from unittest.mock import patch, mock_open
 from import_eksport_files import import_students_txt
 
-# Dodać sprawdzenie jakie jest rozszerzenie pliku
-
 class TestImportStudentsTXT(unittest.TestCase):
 
     @patch('builtins.open', new_callable=mock_open, read_data="John\nJane\n")
