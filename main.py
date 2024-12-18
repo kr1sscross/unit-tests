@@ -1,10 +1,10 @@
 import os
 
 def add_student():
-    name = input("Enter student's first name: ")
-    surname = input("Enter student's last name: ")
-    student_id = input("Enter student's ID: ")
-    return f"{name},{surname},{student_id}\n"
+    first_name = input("Enter first name: ")
+    last_name = input("Enter last name: ")
+    student_id = input("Enter ID: ")
+    return f"{first_name},{last_name},{student_id}\n"
 
 def manage_student_file():
     path = "/lista/list.txt"
