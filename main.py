@@ -108,3 +108,5 @@ print(attendance_manager.generate_report())
 
 
 attendance_manager.export_to_csv("attendance_report.csv")
+
+#Pipeline dziala :)
