@@ -6,11 +6,11 @@ from pathlib import Path
 this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
-Version = os.getenv('PACKAGE_VERSION')
+Versions = os.getenv('PACKAGE_VERSION', '0.0.0')
 
 setup(
     name='unit_tests_kr1sscross',
-    version=Version,
+    version=Versions,
     description='A sample Python function package',
     long_description=long_description,
     long_description_content_type='text/markdown',
