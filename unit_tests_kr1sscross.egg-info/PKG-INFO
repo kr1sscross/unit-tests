@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: unit_tests_kr1sscross
+Version: 0.1.0
+Summary: A sample Python function package
+Home-page: https://github.com/kr1sscross/unit-tests
+Author: Krystian Krawczyk
+Author-email: krystian.krawczyk@int.pl
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+This is my student Python app.

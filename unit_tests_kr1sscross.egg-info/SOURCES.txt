@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+attendance_report.csv
+requirements.txt
+setup.py
+src/__init__.py
+unit_tests_kr1sscross.egg-info/PKG-INFO
+unit_tests_kr1sscross.egg-info/SOURCES.txt
+unit_tests_kr1sscross.egg-info/dependency_links.txt
+unit_tests_kr1sscross.egg-info/top_level.txt

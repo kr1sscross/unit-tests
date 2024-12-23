@@ -6,7 +6,7 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 setup(
-    name='unit_tests_kr1sscross',
+    name='SON',
     version='0.1.0',
     description='A sample Python function package',
     long_description=long_description,
