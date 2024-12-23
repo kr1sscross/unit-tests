@@ -13,7 +13,7 @@ setup(
     long_description_content_type='text/markdown',
     author='Krystian Krawczyk',
     author_email='krystian.krawczyk@int.pl',
-    url='https://github.com/krystian-krawczyk/unit_tests_kr1sscross',  # Update with your repo URL
+    url='https://github.com/kr1sscross/unit-tests',
     packages=find_packages(),
     install_requires=[],
     python_requires='>=3.9',
