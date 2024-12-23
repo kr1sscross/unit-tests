@@ -3,8 +3,7 @@ name: CD Pipeline
 on:
   push:
     tags:
-      - 'v*.*.*' # Uruchamia się dla wszystkich tagów w formacie wersji
-
+      - 'v*.*.*'
 jobs:
   build:
     runs-on: ubuntu-latest
